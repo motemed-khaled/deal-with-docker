@@ -10,7 +10,7 @@ mongoose.connect(`mongodb://root:example@mongo:27017`)
   .catch(err => console.log("error to connect db", err));
 
 app.get("/", (req, res) => {
-  res.json({name:"metoo 123"})
+  res.json({name:"metoo 1234"})
 })
 
 const PORT = process.env.PORT || 4000;
