@@ -11,7 +11,7 @@ mongoose.connect(`mongodb://root:example@mongo:27017`)
 
 app.get("/", (req, res) => {
   console.log("ok")
-  res.json({name:"metoo 12"})
+  res.json({name:"hello from docker hup"})
 })
 
 const PORT = process.env.PORT || 4000;
