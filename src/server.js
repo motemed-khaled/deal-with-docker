@@ -10,6 +10,7 @@ mongoose.connect(`mongodb://root:example@mongo:27017`)
   .catch(err => console.log("error to connect db", err));
 
 app.get("/", (req, res) => {
+  console.log("ok")
   res.json({name:"metoo 12"})
 })
 
