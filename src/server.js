@@ -1,6 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
+import os from "os";
 
 dotenv.config();
 
@@ -10,8 +11,8 @@ mongoose.connect(`mongodb://root:example@mongo:27017`)
   .catch(err => console.log("error to connect db", err));
 
 app.get("/", (req, res) => {
-  console.log("ok")
-  res.json({name:"hello from docker hup"})
+  console.log(`tarfiik from ${os.hostname}`)
+  res.json({name:"hello docker and aws!!!!"})
 })
 
 const PORT = process.env.PORT || 4000;
