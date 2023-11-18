@@ -12,7 +12,7 @@ mongoose.connect(`mongodb://root:example@mongo:27017`)
 
 app.get("/", (req, res) => {
   console.log(`tarfiik from ${os.hostname}`)
-  res.json({name:"hello docker and aws!!!!"})
+  res.json({name:"hello docker and aws and docker swarm!!!!"})
 })
 
 const PORT = process.env.PORT || 4000;
